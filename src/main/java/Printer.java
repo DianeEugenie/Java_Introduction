@@ -26,9 +26,12 @@ public class Printer {
     }
 
     public void print(double pages, double copies){
-       if (this.sheetsLeft >= pages * copies && this.toner >= pages * copies) {
-            this.sheetsLeft -= pages * copies;
-            this.toner -= pages * copies;
+
+        double pagesPrinted = pages * copies;
+
+        if (this.sheetsLeft >= pagesPrinted && this.toner >= pagesPrinted) {
+            this.sheetsLeft -= pagesPrinted;
+            this.toner -= pagesPrinted;
        }
     }
 
