@@ -24,4 +24,8 @@ public class Calculator {
     public void setNumber2(double number2) {
         this.number2 = number2;
     }
+
+    public double addNumbers(){
+        return this.number1 + this.number2;
+    }
 }

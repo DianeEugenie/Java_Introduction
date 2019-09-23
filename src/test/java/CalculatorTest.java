@@ -21,11 +21,12 @@ public class CalculatorTest {
     public void hasNumber2(){
         assertEquals(3.00, calculator.getNumber2(), 0.01);
     }
-//ADD
-//    @Test
-//    public void canAddNumbers(){
-//        assertEquals(13.00, calculator.addNumbers());
-//    }
+
+    //ADD
+    @Test
+    public void canAddNumbers(){
+        assertEquals(13.00, calculator.addNumbers(), 0.01);
+    }
 
 
     //Substract
