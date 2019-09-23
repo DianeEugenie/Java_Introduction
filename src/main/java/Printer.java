@@ -6,7 +6,7 @@ public class Printer {
 
     public Printer(){
         this.sheetsLeft = 100;
-        this.toner = 50;
+        this.toner = 150;
     }
 
     public double getSheetsLeft() {
@@ -26,8 +26,9 @@ public class Printer {
     }
 
     public void print(double pages, double copies){
-       if (this.sheetsLeft >= pages * copies) {
+       if (this.sheetsLeft >= pages * copies && this.toner >= pages * copies) {
             this.sheetsLeft -= pages * copies;
+            this.toner -= pages * copies;
        }
     }
 

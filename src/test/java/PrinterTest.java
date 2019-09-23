@@ -37,12 +37,29 @@ public class PrinterTest {
     //add toner volume to class
     @Test
     public void hasToner(){
-        assertEquals(50, printer.getToner(), 0.01);
+        assertEquals(150, printer.getToner(), 0.01);
+    }
+
+    //add reduce toner function per page
+    @Test
+    public void reduceTonerPerPrintedPage(){
+        printer.print(5, 3);
+        assertEquals(135, printer.getToner(), 0.01);
+        assertEquals(85, printer.getSheetsLeft(), 0.01);
+    }
+
+    //add reduce toner function per page
+    @Test
+    public void cannotReduceTonerPerPrintedPage(){
+        printer.setSheetsLeft(20);
+        printer.setToner(10);
+        printer.print(5, 3);
+        assertEquals(10, printer.getToner(), 0.01);
+        assertEquals(20, printer.getSheetsLeft(), 0.01);
     }
 
 
 
 
-//    Add a toner volume property to the class.
 //    Modify the printer so that it reduces the toner by 1 for each page printed.
 }
