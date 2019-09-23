@@ -15,4 +15,8 @@ public class Printer {
         this.sheetsLeft = sheetsLeft;
     }
 
+    public void print(double pages, double copies){
+        this.sheetsLeft -= pages * copies;
+    }
+
 }
