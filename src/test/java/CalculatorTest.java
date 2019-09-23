@@ -31,19 +31,19 @@ public class CalculatorTest {
     //Substract
     @Test
     public void canSubtractNumbers(){
-        assertEquals(7, calculator.subtractNumber(), 0.01);
+        assertEquals(7, calculator.subtractNumbers(), 0.01);
     }
 
     //Multiply
     @Test
     public void canMultiplyNumbers(){
-        assertEquals(30, calculator.multiplyNumber(), 0.01);
+        assertEquals(30, calculator.multiplyNumbers(), 0.01);
     }
 
     //Divide
     @Test
     public void canDivideNumbers(){
-        assertEquals(3.33, calculator.divideNumber(), 0.01);
+        assertEquals(3.33, calculator.divideNumbers(), 0.01);
     }
 
 

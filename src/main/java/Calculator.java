@@ -29,7 +29,15 @@ public class Calculator {
         return this.number1 + this.number2;
     }
 
-    public double subtractNumber(){
+    public double subtractNumbers(){
         return this.number1 - this.number2;
+    }
+
+    public double multiplyNumbers(){
+        return this.number1 * this.number2;
+    }
+
+    public double divideNumbers(){
+        return this.number1 / this.number2;
     }
 }
