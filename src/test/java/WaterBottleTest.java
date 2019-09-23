@@ -25,6 +25,14 @@ public class WaterBottleTest {
         assertEquals(90, waterBottle.getVolume(), 0.01);
     }
 
+    //volume does not decrease by -10 if volume is less than 10
+    @Test
+    public void cannotDecreaseVolumeBy10(){
+        waterBottle.empty();
+        waterBottle.drink();
+        assertEquals(0, waterBottle.getVolume(), 0.01);
+    }
+
     //empty function set volume to 0
     @Test
     public void canEmptyWaterBottle(){
