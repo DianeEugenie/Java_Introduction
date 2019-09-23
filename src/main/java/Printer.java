@@ -1,10 +1,12 @@
 public class Printer {
 
     private double sheetsLeft;
+    private double toner;
 
 
     public Printer(){
         this.sheetsLeft = 100;
+        this.toner = 50;
     }
 
     public double getSheetsLeft() {
@@ -13,6 +15,14 @@ public class Printer {
 
     public void setSheetsLeft(double sheetsLeft) {
         this.sheetsLeft = sheetsLeft;
+    }
+
+    public double getToner() {
+        return toner;
+    }
+
+    public void setToner(double toner) {
+        this.toner = toner;
     }
 
     public void print(double pages, double copies){
