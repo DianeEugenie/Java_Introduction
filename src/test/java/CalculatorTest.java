@@ -28,12 +28,23 @@ public class CalculatorTest {
         assertEquals(13.00, calculator.addNumbers(), 0.01);
     }
 
-
     //Substract
+    @Test
+    public void canSubtractNumbers(){
+        assertEquals(7, calculator.subtractNumber(), 0.01);
+    }
 
     //Multiply
+    @Test
+    public void canMultiplyNumbers(){
+        assertEquals(30, calculator.multiplyNumber(), 0.01);
+    }
 
     //Divide
+    @Test
+    public void canDivideNumbers(){
+        assertEquals(3.33, calculator.divideNumber(), 0.01);
+    }
 
 
 

@@ -28,4 +28,8 @@ public class Calculator {
     public double addNumbers(){
         return this.number1 + this.number2;
     }
+
+    public double subtractNumber(){
+        return this.number1 - this.number2;
+    }
 }
