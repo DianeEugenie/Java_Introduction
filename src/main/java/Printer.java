@@ -16,7 +16,9 @@ public class Printer {
     }
 
     public void print(double pages, double copies){
-        this.sheetsLeft -= pages * copies;
+       if (this.sheetsLeft >= pages * copies) {
+            this.sheetsLeft -= pages * copies;
+       }
     }
 
 }

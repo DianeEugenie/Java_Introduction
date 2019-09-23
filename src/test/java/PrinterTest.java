@@ -27,7 +27,12 @@ public class PrinterTest {
     }
 
     //print only runs if enough pages
-    
+    @Test
+    public void cannotPrintIfNoSheetsLeft(){
+        printer.setSheetsLeft(0);
+        printer.print(2, 3);
+        assertEquals(0, printer.getSheetsLeft(), 0.01);
+    }
 
 
 
