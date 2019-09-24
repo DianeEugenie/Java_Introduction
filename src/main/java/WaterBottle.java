@@ -15,7 +15,7 @@ public class WaterBottle {
     }
 
     public void drink(){
-        if (this.volume > 10) {
+        if (this.volume >= 10) {
             this.volume -= 10;
         }
     }

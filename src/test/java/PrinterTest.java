@@ -58,8 +58,4 @@ public class PrinterTest {
         assertEquals(20, printer.getSheetsLeft(), 0.01);
     }
 
-
-
-
-//    Modify the printer so that it reduces the toner by 1 for each page printed.
 }
